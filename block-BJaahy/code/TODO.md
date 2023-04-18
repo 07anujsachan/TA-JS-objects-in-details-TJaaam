@@ -1,7 +1,7 @@
 # More about class
 
 - Create a class named `Square` which accepts one parameter `side` and will set two property `width` and `height` to the value of `side`.
-
+let claass == usergit 
 - Add a method named `description` that will alert a message saying `The square is ${width} x ${height}`
 
 - Create another method named `calcArea` that will return the area of the square.
