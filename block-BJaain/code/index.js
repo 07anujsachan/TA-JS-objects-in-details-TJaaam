@@ -1,4 +1,4 @@
-console.log(this.document === document); // Output
+console.log(this.document === document);  //
 
 // ------------
 
