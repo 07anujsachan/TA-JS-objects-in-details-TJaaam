@@ -9,7 +9,7 @@ Queue
 ![Queue](../assets/queue.gif)
 
 1. Create a class name `Stack` with the following data and methods. Also implement a `length` getter method.
-
+ 
 Data:
 
 - `stack`
