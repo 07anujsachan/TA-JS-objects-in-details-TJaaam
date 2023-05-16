@@ -63,13 +63,9 @@ Make sure it does not the changes the original array.
 
 */
 
-Array.prototype.shuffle = function (array) {
-  for (let i = array.length - 1; i > 0; i--) {
-    let j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
-  }
-}
-;
+Array.prototype.shuffle = function () {
+  return [...this].sort(() => Math.random() - 0.5);
+};
 
 // Test to check the shuffle method (It will return different output every time you call)
 console.log(numbers.shuffle());
@@ -83,7 +79,14 @@ new array and it should only contain unique elements in the array.
 Unique means no element should come multiple times.
 */
 
-// You code goes here
+Array.prototype.unique = function () {
+  return this.reduce((acc, cv) => {
+    if (!acc.includes(cv)) {
+      acc.push(cv);
+    }
+    return acc;
+  }, []);
+};
 
 // Test to check the shuffle method (It will return different output every time you call)
 let num = [1, 2, 3, 4, 2, 3, 6, 7, 7];
