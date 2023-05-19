@@ -1,0 +1,9 @@
+
+.capital {
+  text-transform: uppercase;
+}
+.book {
+  display: flex;
+  justify-content: space-between;
+  background-color: grey;
+}
