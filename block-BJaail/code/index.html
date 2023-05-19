@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    ˀ
+  </head>
+  <body>
+    <div class="max-w-7xl w-full my-0 mx-auto py-3">
+      <div class="flex justify-center mb-10">
+        <span class="material-symbols-outlined text-blue-400 text-6xl mr-2">
+          import_contacts
+        </span>
+        <h1 class="text-6xl tracking-wider">
+          My<span class="text-blue-400">Book</span>List
+        </h1>
+      </div>
+
+      <form>
+        <label for="Title" class="block mb-3"> Title </label>
+        <input
+          type="text"
+          name="Title"
+          id="Title"
+          class="border-2 block w-full mb-3 py-3"
+        />
+        <label for="Author" class="block mb-3"> Author </label>
+        <input
+          type="text"
+          name="Author"
+          id="Author"
+          class="border-2 block w-full mb-3 py-3"
+        />
+        <label for="ISBN#" class="block mb-3"> ISBN# </label>
+        <input
+          type="text"
+          name="ISBN#"
+          id="ISBN#"
+          class="border-2 block w-full mb-7 py-3"
+        />
+        <button
+          type="submit"
+          class="bg-blue-500 text-white text-2x tetx-center block py-3 text-2xl w-full add-btn"
+        >
+          Add Book
+        </button>
+      </form>
+      <section>
+        <div class="max-w-7xl w-full my-0 mx-auto">
+          <ul class="books">
+            <li class="flex justify-between border-2 my-3 py-2">
+              <span class="py-2 text-2l font-bold"> Title</span>
+              <span class="py-2 text-2l font-bold"> Author</span>
+              <span class="py-2 text-2l font-bold"> ISBN#</span>
+              <span class="mr-9"></span>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
